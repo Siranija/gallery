@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+  <header>
+    <center><h1>Fashion & Cloths Gallery</h1></center>
+  </header>
+
+  <div class="main-container">
+    <!-- Sidebar with filter buttons -->
+    <aside class="sidebar" id="sidebar">
+      <button id="collapseBtn">⮜</button>
+      <h2>Sections</h2>
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="Frocks">Frocks</button>
+      <button class="filter-btn" data-filter="Western dresses">Western dresses</button>
+      <button class="filter-btn" data-filter="Traditional dresses">Traditional dresses</button>
+      <button class="filter-btn" data-filter="Footwears">Footwears</button>
+      <button class="filter-btn" data-filter="Accessories">Accessories</button>
+      
+    </aside>
+
+    <!-- Gallery Content -->
+    <div class="gallery-container">
+      <div class="gallery" id="gallery">
+        <div class="gallery-item" data-category="Frocks"><img src="frock1.jpg" alt="" /></div>
+        <div class="gallery-item" data-category="Frocks"><img src="frock2.jpg" alt="Nature 1" /></div>
+        <div class="gallery-item" data-category="Frocks"><img src="frock3.jpg" alt="Nature 1" /></div>
+        <div class="gallery-item" data-category="Frocks"><img src="frock4.jpg" alt="Nature 1" /></div>
+        <div class="gallery-item" data-category="Frocks"><img src="frock5.jpg" alt="Nature 1" /></div>
+        <div class="gallery-item" data-category="Frocks"><img src="frock6.jpg" alt="Nature 1" /></div>
+        <div class="gallery-item" data-category="Frocks"><img src="frock7.jpg" alt="Nature 1" /></div>
+        <div class="gallery-item" data-category="Frocks"><img src="frock8.jpg" alt="Nature 1" /></div>
+        <div class="gallery-item" data-category="Frocks"><img src="frock9.jpg" alt="Nature 1" /></div>
+        <div class="gallery-item" data-category="Frocks"><img src="frock10.jpg" alt="Nature 1" /></div>
+        <div class="gallery-item" data-category="Frocks"><img src="frock11.jpg" alt="Nature 1" /></div>
+        <div class="gallery-item" data-category="Frocks"><img src="frock12.jpg" alt="Nature 1" /></div>
+        <div class="gallery-item" data-category="Frocks"><img src="frock13.jpg" alt="Nature 1" /></div>
+         
+        <div class="gallery-item" data-category="Western dresses"><img src="wes1.jpg" alt="City 1" /></div>
+        <div class="gallery-item" data-category="Western dresses"><img src="wes2.jpg" alt="City 1" /></div>
+        <div class="gallery-item" data-category="Western dresses"><img src="wes3.jpg" alt="City 1" /></div>
+        <div class="gallery-item" data-category="Western dresses"><img src="wes4.jpg" alt="City 1" /></div>
+        <div class="gallery-item" data-category="Western dresses"><img src="wes5.jpg" alt="City 1" /></div>
+        <div class="gallery-item" data-category="Western dresses"><img src="wes6.jpg" alt="City 1" /></div>
+        <div class="gallery-item" data-category="Western dresses"><img src="wes7.jpg" alt="City 1" /></div>
+        <div class="gallery-item" data-category="Western dresses"><img src="wes8.jpg" alt="City 1" /></div>
+        <div class="gallery-item" data-category="Western dresses"><img src="wes9.jpg" alt="City 1" /></div>
+        <div class="gallery-item" data-category="Western dresses"><img src="wes10.jpg" alt="City 1" /></div>
+        <div class="gallery-item" data-category="Western dresses"><img src="wes11.jpg" alt="City 1" /></div>
+        <div class="gallery-item" data-category="Western dresses"><img src="wes12.jpg" alt="City 1" /></div>
+        <div class="gallery-item" data-category="Western dresses"><img src="wes13.jpg" alt="City 1" /></div>
+        <div class="gallery-item" data-category="Western dresses"><img src="wes14.jpg" alt="City 1" /></div>
+        <div class="gallery-item" data-category="Western dresses"><img src="wes15.jpg" alt="City 1" /></div>
+        <div class="gallery-item" data-category="Western dresses"><img src="wes16.jpg" alt="City 1" /></div>
+        <div class="gallery-item" data-category="Western dresses"><img src="wes17.jpg" alt="City 1" /></div>
+        <div class="gallery-item" data-category="Western dresses"><img src="wes18.jpg" alt="City 1" /></div>
+        
+
+        <div class="gallery-item" data-category="Traditional dresses"><img src="trad1.jpg" alt="Dog" /></div>
+        <div class="gallery-item" data-category="Traditional dresses"><img src="trad2.jpg" alt="Dog" /></div>
+        <div class="gallery-item" data-category="Traditional dresses"><img src="trad3.jpg" alt="Dog" /></div>
+        <div class="gallery-item" data-category="Traditional dresses"><img src="trad4.jpg" alt="Dog" /></div>
+        <div class="gallery-item" data-category="Traditional dresses"><img src="trad5.jpg" alt="Dog" /></div>
+        <div class="gallery-item" data-category="Traditional dresses"><img src="trad6.jpg" alt="Dog" /></div>
+        <div class="gallery-item" data-category="Traditional dresses"><img src="trad7.jpg" alt="Dog" /></div>
+        <div class="gallery-item" data-category="Traditional dresses"><img src="trad8.jpg" alt="Dog" /></div>
+        <div class="gallery-item" data-category="Traditional dresses"><img src="trad9.jpg" alt="Dog" /></div>
+        <div class="gallery-item" data-category="Traditional dresses"><img src="trad10.jpg" alt="Dog" /></div>
+        <div class="gallery-item" data-category="Traditional dresses"><img src="trad11.jpg" alt="Dog" /></div>
+        <div class="gallery-item" data-category="Traditional dresses"><img src="trad12.jpg" alt="Dog" /></div>
+        <div class="gallery-item" data-category="Traditional dresses"><img src="trad13.jpg" alt="Dog" /></div>
+                                                                                                                
+
+        <div class="gallery-item" data-category="Footwears"><img src="foot1.jpg" alt="Nature 2" /></div>
+        <div class="gallery-item" data-category="Footwears"><img src="foot2.jpg" alt="Nature 2" /></div>
+        <div class="gallery-item" data-category="Footwears"><img src="foot3.jpg" alt="Nature 2" /></div>
+        <div class="gallery-item" data-category="Footwears"><img src="foot4.jpg" alt="Nature 2" /></div>
+        <div class="gallery-item" data-category="Footwears"><img src="foot5.jpg" alt="Nature 2" /></div>
+        <div class="gallery-item" data-category="Footwears"><img src="foot6.jpg" alt="Nature 2" /></div>
+        <div class="gallery-item" data-category="Footwears"><img src="foot7.jpg" alt="Nature 2" /></div>
+        <div class="gallery-item" data-category="Footwears"><img src="foot8.jpg" alt="Nature 2" /></div>
+        <div class="gallery-item" data-category="Footwears"><img src="foot9.jpg" alt="Nature 2" /></div>
+        <div class="gallery-item" data-category="Footwears"><img src="foot10.jpg" alt="Nature 2" /></div>
+        <div class="gallery-item" data-category="Footwears"><img src="foot11.jpg" alt="Nature 2" /></div>
+        <div class="gallery-item" data-category="Footwears"><img src="foot12.jpg" alt="Nature 2" /></div>
+        <div class="gallery-item" data-category="Footwears"><img src="foot13.jpg" alt="Nature 2" /></div>
+        <div class="gallery-item" data-category="Footwears"><img src="foot14.jpg" alt="Nature 2" /></div>
+        <div class="gallery-item" data-category="Footwears"><img src="foot15.jpg" alt="Nature 2" /></div>
+        <div class="gallery-item" data-category="Footwears"><img src="foot16.jpg" alt="Nature 2" /></div>
+        <div class="gallery-item" data-category="Footwears"><img src="foot17.jpg" alt="Nature 2" /></div>
+
+
+
+        <div class="gallery-item" data-category="Accessories"><img src="acc1.jpg" alt="City 2" /></div>
+        <div class="gallery-item" data-category="Accessories"><img src="acc2.jpg" alt="City 2" /></div>
+        <div class="gallery-item" data-category="Accessories"><img src="acc3.jpg" alt="City 2" /></div>
+        <div class="gallery-item" data-category="Accessories"><img src="acc4.jpg" alt="City 2" /></div>
+        <div class="gallery-item" data-category="Accessories"><img src="acc5.jpg" alt="City 2" /></div>
+        <div class="gallery-item" data-category="Accessories"><img src="acc6.jpg" alt="City 2" /></div>
+        <div class="gallery-item" data-category="Accessories"><img src="acc7.jpg" alt="City 2" /></div>
+        <div class="gallery-item" data-category="Accessories"><img src="acc8.jpg" alt="City 2" /></div>
+        <div class="gallery-item" data-category="Accessories"><img src="acc9.jpg" alt="City 2" /></div>
+        <div class="gallery-item" data-category="Accessories"><img src="acc10.jpg" alt="City 2" /></div>
+        <div class="gallery-item" data-category="Accessories"><img src="acc11.jpg" alt="City 2" /></div>
+        <div class="gallery-item" data-category="Accessories"><img src="acc12.jpg" alt="City 2" /></div>
+        <div class="gallery-item" data-category="Accessories"><img src="acc13.jpg" alt="City 2" /></div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <img id="lightbox-img" src="" alt="Full View" />
+    <div class="controls">
+      <button id="prevBtn">←</button>
+      <button id="nextBtn">→</button>
+      <button id="closeBtn">✕</button>
+    </div>
+  </div>
+
+  <script src="gallery.js" defer ></script>
+</body>
+</html>

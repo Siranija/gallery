@@ -1,0 +1,184 @@
+* {
+      box-sizing: border-box;
+    }
+
+   body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #6c5df3;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* Sidebar Base */
+.sidebar {
+  width: 200px;
+  height: 800px;
+  background-color: #fcfafa;
+  padding: 1rem;
+  border-right: 1px solid #ddd;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Collapsed Sidebar */
+.sidebar.collapsed {
+  width: 50px;
+}
+
+.sidebar.collapsed h2,
+.sidebar.collapsed .filter-btn,
+.sidebar.collapsed #shuffleBtn {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+#collapseBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ccc;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 16px;
+  z-index: 1;
+  transition: transform 0.3s;
+}
+
+
+.sidebar.collapsed #collapseBtn {
+  transform: rotate(180deg);
+}
+
+/* Adjust main container when sidebar is collapsed */
+.main-container {
+  display: flex;
+  transition: margin-left 0.3s ease;
+}
+
+.gallery-container {
+  flex: 1;
+  padding: 1rem;
+}
+
+/* Dark Mode Adjustments */
+body.dark-mode .sidebar {
+  background-color: #333;
+  border-color: #444;
+}
+
+body.dark-mode #collapseBtn {
+  background: #555;
+  color: white;
+}
+
+.filter-btn {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.filter-btn.active,
+.filter-btn:hover,
+#shuffleBtn:hover {
+  background-color: #bbb;
+}
+
+.gallery-container {
+  flex: 1;
+  padding: 50px;
+  padding-left: 100px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.gallery-item img {
+  height: 300px;
+  width: 300px;
+  border-radius: 8px;
+  gap: 50px;
+}
+
+/* Lightbox styles remain unchanged */
+/* Fade-in animation */
+.gallery-item {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 0.3s ease;
+  gap: 30px;
+}
+
+.gallery-item.fade-in {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 999;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.lightbox .controls button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #222;
+  color: #eee;
+}
+
+body.dark-mode .sidebar {
+  background-color: #333;
+  border-color: #444;
+}
+
+body.dark-mode .filter-btn,
+body.dark-mode #shuffleBtn {
+  background-color: #444;
+  color: #eee;
+}
+
+body.dark-mode .filter-btn:hover,
+body.dark-mode .filter-btn.active,
+body.dark-mode #shuffleBtn:hover {
+  background-color: #666;
+}
