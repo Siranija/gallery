@@ -1,12 +1,14 @@
+# 📸 Image Gallery
+
+A responsive and interactive image gallery built using **HTML**, **CSS**, and **JavaScript**.  
+This project was developed as a part of my **Frontend Development Internship at CodeAlpha**.
+
+
 ## ✅ About the Internship
 
 This project was submitted as a task for the **CodeAlpha Frontend Development Internship**.  
 It helped strengthen my frontend skills and improve my understanding of DOM, responsive layouts, and UI/UX.
 
-# 📸 Image Gallery
-
-A responsive and interactive image gallery built using **HTML**, **CSS**, and **JavaScript**.  
-This project was developed as a part of my **Frontend Development Internship at CodeAlpha**.
 
 ## 🚀 Features
 
